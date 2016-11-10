@@ -97,6 +97,7 @@
             this.dateJoinedDateTimePicked.Size = new System.Drawing.Size(152, 27);
             this.dateJoinedDateTimePicked.TabIndex = 17;
             this.dateJoinedDateTimePicked.Enter += new System.EventHandler(this.dateJoinedDateTimePicked_Enter);
+            this.dateJoinedDateTimePicked.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dateJoinedDateTimePicked_KeyUp);
             this.dateJoinedDateTimePicked.Leave += new System.EventHandler(this.dateJoinedDateTimePicked_Leave);
             // 
             // label16

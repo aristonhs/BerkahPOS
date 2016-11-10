@@ -21,7 +21,7 @@ namespace ALPHASOFT_BERKAH
     {
         private int originModuleID = 0;
         private int selectedCustomerID = 0;
-
+        private bool flag_load = false;
         private string previousInput = "";
         private string previousInputPhone = "";
         private string previousInputFax = "";
@@ -408,6 +408,7 @@ namespace ALPHASOFT_BERKAH
                     break;
             }
             registerGlobalHotkey();
+            flag_load = true;
         }
 
         private void dataPelangganDetailForm_Deactivate(object sender, EventArgs e)
@@ -417,12 +418,21 @@ namespace ALPHASOFT_BERKAH
 
         private void dateJoinedDateTimePicked_Enter(object sender, EventArgs e)
         {
+            if (flag_load== true)
             unregisterGlobalHotkey();
         }
 
         private void dateJoinedDateTimePicked_Leave(object sender, EventArgs e)
         {
             registerGlobalHotkey();
+        }
+
+        private void dateJoinedDateTimePicked_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                custNameTextBox.Select();
+            }
         }
     }
 }
