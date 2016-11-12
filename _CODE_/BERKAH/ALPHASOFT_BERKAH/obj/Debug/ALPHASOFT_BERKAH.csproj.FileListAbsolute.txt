@@ -146,8 +146,6 @@ E:\My Works\Project Berkah\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.cs
 E:\My Works\Project Berkah\BERKAH\ALPHASOFT_BERKAH\obj\Debug\BERKAH_POS.exe
 E:\My Works\Project Berkah\BERKAH\ALPHASOFT_BERKAH\obj\Debug\BERKAH_POS.pdb
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\BERKAH_POS.exe.config
-C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\BERKAH_POS.exe
-C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\BERKAH_POS.pdb
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\BERKAH_POS.exe
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\BERKAH_POS.pdb
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
@@ -168,7 +166,6 @@ C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Deb
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\bin\Debug\stdole.dll
-C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.csprojResolveAssemblyReference.cache
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.AboutUsForm.resources
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.adminHelpForm.resources
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.barcodeForm.resources
@@ -292,3 +289,6 @@ C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Deb
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.TabSchemeProvider.resources
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.XMLGeneratorForm.resources
 C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.csproj.GenerateResource.Cache
+C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\BERKAH_POS.exe
+C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\BERKAH_POS.pdb
+C:\Users\alpha\Documents\GitHub\BerkahPOS\_CODE_\BERKAH\ALPHASOFT_BERKAH\obj\Debug\ALPHASOFT_BERKAH.csprojResolveAssemblyReference.cache
