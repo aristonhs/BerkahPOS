@@ -2207,14 +2207,14 @@ namespace ALPHASOFT_BERKAH
                 paperLength = calculatePageLength();
                 PaperSize psize = new PaperSize("Custom", 255, paperLength);//820); //change paper size receipt width x height
                 printDocument1.DefaultPageSettings.PaperSize = psize;
-                DialogResult result;
-                printPreviewDialog1.Width = 512;
-                printPreviewDialog1.Height = 768;
-                result = printPreviewDialog1.ShowDialog();
-                if (result == DialogResult.OK)
-                {
+                //DialogResult result;
+                //printPreviewDialog1.Width = 512;
+                //printPreviewDialog1.Height = 768;
+                //result = printPreviewDialog1.ShowDialog();
+                //if (result == DialogResult.OK)
+                //{
                     printDocument1.Print();
-                }
+                //}
             } else
             {
                 gutil.saveSystemDebugLog(globalConstants.MENU_PENJUALAN, "CASHIER FORM : PrintReceipt, papermode [" + papermode + "]");
@@ -2275,39 +2275,25 @@ namespace ALPHASOFT_BERKAH
             
             loadInfoToko(2, out nm, out almt, out tlpn, out email);
 
-            //set printing area
+            //HEADER
             Offset = Offset + add_offset;
-
             Offset = Offset + add_offset;
-
             if (!email.Equals(""))
+            {
                 Offset = Offset + add_offset;
-
-            Offset = Offset + add_offset;
-            //end of header
-
-            //start of content
-
-            ////1. PAYMENT METHOD
-            //Offset = Offset + add_offset;
-
-            //2. CUSTOMER NAME
+            }
+            //UNDERLINE
             Offset = Offset + add_offset;
 
-            //Offset = Offset + add_offset;
-
-            //Offset = Offset + add_offset;
-
-            //Offset = Offset + add_offset + Offsetplus;
-
-            //Offset = Offset + add_offset;
-
+            //TOP INFO
             Offset = Offset + add_offset;
-
+            Offset = Offset + add_offset;
+            Offset = Offset + add_offset;
+            Offset = Offset + add_offset;
+            //UNDERLINE
             Offset = Offset + add_offset;
 
             //DETAIL PENJUALAN
-
             DS.mySqlConnect();
             MySqlDataReader rdr;
             using (rdr = DS.getData("SELECT S.ID, S.PRODUCT_ID AS 'P-ID', P.PRODUCT_NAME AS 'NAME', S.PRODUCT_QTY AS 'QTY',ROUND(S.SALES_SUBTOTAL/S.PRODUCT_QTY) AS 'PRICE' FROM sales_detail S, master_product P WHERE S.PRODUCT_ID=P.PRODUCT_ID AND S.SALES_INVOICE='" + selectedsalesinvoice + "'"))//+ "group by s.product_id") )
@@ -2325,8 +2311,7 @@ namespace ALPHASOFT_BERKAH
                         {
                             i = 1;
                             Offset = Offset + add_offset + Offsetplus;
-                        }
-                    
+                        }                    
                         Offset = Offset + add_offset;
                         Offset = Offset + add_offset;
                     }
@@ -2343,10 +2328,8 @@ namespace ALPHASOFT_BERKAH
             Offset = Offset + add_offset;
 
             Offset = Offset + add_offset;
-            //end of content
 
             //FOOTER
-
             Offset = Offset + add_offset + Offsetplus;
 
             Offset = Offset + add_offset + Offsetplus; ;
@@ -2492,7 +2475,7 @@ namespace ALPHASOFT_BERKAH
             //         new SolidBrush(Color.Black), rect, sf);
 
             //2. CUSTOMER NAME
-            Offset = Offset + add_offset;
+            //Offset = Offset + add_offset;
             //rectright.Y = startY + Offset;
             //rectright.X = totrowwidth - colxwidth - 30;
             //ucapan = " || " + customer + "[" + group + "]";
@@ -2517,17 +2500,18 @@ namespace ALPHASOFT_BERKAH
 
             //Offset = Offset + add_offset + offset_plus;
 
-            string ucapan2 = "";            
+            //string ucapan2 = "";
 
+            Offset = Offset + add_offset;
             rect.Y = startY + Offset;
             rect.X = startX + 10;
             rect.Width = totrowwidth;
             sf.LineAlignment = StringAlignment.Near;
             sf.Alignment = StringAlignment.Near;
             if (originModuleID != globalConstants.DUMMY_TRANSACTION_TAX)
-                ucapan = "NOTA : " + selectedsalesinvoice;
+                ucapan = "NOTA : " + selectedsalesinvoice + " (" +tgl + ")";
             else
-                ucapan = "NOTA : " + selectedsalesinvoiceTax;
+                ucapan = "NOTA : " + selectedsalesinvoiceTax + " (" + tgl + ")";
             graphics.DrawString(ucapan, new Font("Courier New", fontSize),
                      new SolidBrush(Color.Black), rect, sf);
 
@@ -2541,7 +2525,7 @@ namespace ALPHASOFT_BERKAH
             rect.Y = startY + Offset;
             string nama = "";
             loadNamaUser(gutil.getUserID(), out nama);
-            ucapan = "TGL  : " + tgl + " || " + nama;
+            ucapan = "OPR  : " + nama;
             graphics.DrawString(ucapan, new Font("Courier New", fontSize),
                      new SolidBrush(Color.Black), rect, sf);
 
